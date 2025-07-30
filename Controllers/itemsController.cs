@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using testRestApi.data;
 using testRestApi.data.models;
@@ -64,7 +64,7 @@ namespace testRestApi.Controllers
             {
                 // create container folder 
                 //string folderpath = Path.Combine(_WebHostEnvironment.WebRootPath, "items images");
-                string folderpath = "D:\\photos";
+                string folderpath = "photos";
                 if (!Directory.Exists(folderpath)) { Directory.CreateDirectory(folderpath); }
                ;
 
@@ -120,7 +120,7 @@ namespace testRestApi.Controllers
                     if (result.imagepath != null)
                     {
 
-                        string folderpath = "/photos";
+                        string folderpath = "photos";
                         if (!Directory.Exists(folderpath)) { Directory.CreateDirectory(folderpath); }
                        ;
 
